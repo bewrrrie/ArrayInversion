@@ -10,6 +10,7 @@ public interface IInverter {
      * @param <T> - generic type.
      * @param inputArray - array of T.
      * @return inverted array.
+     * @throws NullPointerException
      */
-    <T> IArray<T> invert(final IArray<T> inputArray);
+    <T> IArray<T> invert(final IArray<T> inputArray) throws NullPointerException;
 }

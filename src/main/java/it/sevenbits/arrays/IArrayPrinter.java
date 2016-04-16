@@ -11,6 +11,7 @@ public interface IArrayPrinter {
      * Print array elements.
      * @param array - input.
      * @param <T> - generic type.
+     * @throws NullPointerException
      */
-    <T> void print(final Array<T> array);
+    <T> void print(final Array<T> array) throws NullPointerException;
 }

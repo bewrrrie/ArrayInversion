@@ -15,7 +15,6 @@ public class ArrayInverter implements IInverter {
      * @return inverted array
      * @throws NullPointerException
      */
-
     public <T> IArray<T> invert(final IArray<T> inputArray) throws NullPointerException {
         int halfAnArrayIndex = inputArray.getLength() / 2;
 

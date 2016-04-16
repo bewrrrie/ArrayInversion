@@ -7,6 +7,8 @@ import it.sevenbits.arrays.IArray;
  * @param <T> - generic type.
  */
 public class Array<T> implements IArray<T> {
+    private T[] array;
+
     /**
      * Constructor.
      * @param array - input array.
@@ -14,8 +16,6 @@ public class Array<T> implements IArray<T> {
     public Array(final T[] array) {
         this.array = array;
     }
-
-    private T[] array;
 
     /**
      * Set element.

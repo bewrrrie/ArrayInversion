@@ -23,10 +23,14 @@ final class Main {
         ArrayInverter inverter = new ArrayInverter();
         ArrayPrinter printer = new ArrayPrinter();
 
-        System.out.print("Before inverting: ");
-        printer.print(testArray);
-        inverter.invert(testArray);
-        System.out.print("After inverting: ");
-        printer.print(testArray);
+        try {
+            System.out.print("Before inverting: ");
+            printer.print(testArray);
+            inverter.invert(testArray);
+            System.out.print("After inverting: ");
+            printer.print(testArray);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
     }
 }

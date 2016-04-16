@@ -13,21 +13,18 @@ public class ArrayInverter implements IInverter {
      * @param <T> - generic type.
      * @param inputArray - original array.
      * @return inverted array
+     * @throws NullPointerException
      */
 
-    public <T> IArray<T> invert(final IArray<T> inputArray) {
-        try {
-            int halfAnArrayIndex = inputArray.getLength() / 2;
+    public <T> IArray<T> invert(final IArray<T> inputArray) throws NullPointerException {
+        int halfAnArrayIndex = inputArray.getLength() / 2;
 
-            for (int i = 0; i < halfAnArrayIndex; i++) {
-                T temp = inputArray.get(i);
-                inputArray.set(i, inputArray.get(inputArray.getLength() - i - 1));
-                inputArray.set(inputArray.getLength() - i - 1, temp);
-            }
-
-            return inputArray;
-        } catch (NullPointerException e) {
-            return null;
+        for (int i = 0; i < halfAnArrayIndex; i++) {
+            T temp = inputArray.get(i);
+            inputArray.set(i, inputArray.get(inputArray.getLength() - i - 1));
+            inputArray.set(inputArray.getLength() - i - 1, temp);
         }
+
+        return inputArray;
     }
 }

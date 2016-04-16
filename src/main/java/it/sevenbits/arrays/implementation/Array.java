@@ -40,4 +40,11 @@ public class Array<T> implements IArray<T> {
     public int getLength() {
         return array.length;
     }
+
+    /**
+     * @return array.
+     */
+    public T[] getArray() {
+        return array;
+    }
 }

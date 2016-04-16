@@ -23,4 +23,9 @@ public interface IArray<T> {
      * @return array length.
      */
     int getLength();
+
+    /**
+     * @return array.
+     */
+    T[] getArray();
 }

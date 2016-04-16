@@ -13,7 +13,7 @@ final class Main {
      */
     private Main() {}
 
-    private static final Array<Integer> testArray = new Array<Integer>(new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9});
+    private static final Array<Integer> testArray = new Array<Integer>(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9});
 
     /**
      * Main method.
